@@ -1004,7 +1004,7 @@ def __init_websockets(splash, app_bootstrap, settings):
     # module we won't be able to catch any exception types from that module.
     try:
         # Makes sure that the certificate has been created on disk and registered with the OS (or browser on Linux).
-        __ensure_certificate_ready(app_bootstrap, tk_framework_desktopserver, integration_settings.certificate_folder)
+        # __ensure_certificate_ready(app_bootstrap, tk_framework_desktopserver, integration_settings.certificate_folder)
 
         # Launch the server
         server = tk_framework_desktopserver.Server(
